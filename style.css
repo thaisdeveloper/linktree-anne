@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    color: goldenrod;
+}
+
+.header {
+    width: 100%;
+    height: 600px;
+    /* Ajuste conforme necessário */
+    background-image: url('./Design sem nome (8).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 20px;
+}
+
+.profile-pic-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: calc(50% - 75px);
+    z-index: 1;
+    /* Assegura que a foto de perfil fique acima da imagem de fundo */
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 100px;
+    margin: 20px auto 0;
+    display: block;
+    z-index: 1;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.link {
+    display: block;
+    background-color: #961c22;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 0;
+    margin: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #b8912a;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 300px;
+        background-size: contain;
+    }
+    .profile-pic-container {
+        width: 120px;
+        height: 120px;
+        top: calc(50% - 60px);
+    }
+    .logo {
+        width: 80px;
+    }
+    .link {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+}
+
+.carousel-container {
+    position: relative;
+    width: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 40%;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 250px;
+        background-size: contain;
+    }
+    .profile-pic-container {
+        width: 100px;
+        height: 100px;
+        top: calc(50% - 50px);
+    }
+    .logo {
+        width: 60px;
+    }
+    .link {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
